@@ -10,16 +10,18 @@
     <script src="./js/index.js" defer></script>
   </head>
   <body>
-    <!-- 상단 내비게이션 -->
-    <nav class="top-nav">
-      <span class="nav-logo">My Page</span>
-      <ul class="nav-links">
-        <li><a href="#about">자기소개</a></li>
-        <li><a href="#gallery">갤러리</a></li>
-        <li><a href="#works">인생 작품</a></li>
-        <li><a href="#til">TIL</a></li>
-      </ul>
-    </nav>
+    <header>
+      <!-- 상단 내비게이션 -->
+      <nav class="top-nav">
+        <span class="nav-logo">My Page</span>
+        <ul class="nav-links">
+          <li><a href="#about">자기소개</a></li>
+          <li><a href="#gallery">갤러리</a></li>
+          <li><a href="#works">인생 작품</a></li>
+          <li><a href="#til">TIL</a></li>
+        </ul>
+      </nav>
+    </header>
 
     <!-- 프로필 히어로 -->
     <section class="hero" id="about">
@@ -85,22 +87,39 @@
       <!-- 나를 울린 인생 작품 -->
       <section class="content-section" id="works">
         <h2>나를 울린 인생 작품</h2>
-        <div class="works-list">
-              <li>유연함의 힘</li>
-              <li>어벤져스 엔드개임</li>
-          <article class="work-card">
-            <div class="work-thumbnail">
-              <img src="./images/end_game.jpeg" alt="엔드게임 이미지">
-            </div>
-            <div class="work-info">
-              <h3>어벤져스 엔드개임</h3>
-              <p>악당 타노스에 맞서는, 영웅 집단 "어벤져스"의 이야기!</p>
-              <iframe src="https://www.youtube.com/embed/Rrf8uQFvICE" width="300px", height=200px>
-                <p>사용 중인 브라우저는 iframe을 지원하지 않습니다.</p>
-              </iframe>
-            </div>
-          </article>
-        </div>
+        <ul>
+          <li>
+            <div class="works-list">
+              <article class="work-card">
+                <div class="work-thumbnail">
+                  <img src="./images/end_game.jpeg" alt="엔드게임 이미지">
+                </div>
+                <div class="work-info">
+                  <h3>어벤져스 엔드개임</h3>
+                  <p>악당 타노스에 맞서는, 영웅 집단 "어벤져스"의 이야기!</p>
+                  <iframe src="https://www.youtube.com/embed/Rrf8uQFvICE" width="300px", height=200px>
+                    <p>사용 중인 브라우저는 iframe을 지원하지 않습니다.</p>
+                  </iframe>
+                </div>
+              </article>
+            </div>            
+          </li>
+          <li>
+            <div class="works-list">
+              <ul class="works-list">
+              </ul>
+              <article class="work-card">
+                <div class="work-thumbnail">
+                  <img src="./images/power-of-flexing.jpeg" alt="유연함의 힘 이미지">
+                </div>
+                <div class="work-info">
+                  <h3>유연함의 힘</h3>
+                  <p>일상 속에서 조금 씩 더 나은 내가 되는 방법!</p>
+                </div>
+              </article>
+            </div>          
+          </li>
+        </ul>
       </section>
 
       <!-- TIL (Today I Learned) -->
